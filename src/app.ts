@@ -11,7 +11,8 @@ app.get('/', (_request, response) => {
      <p>Verified by GitHub Actions. Deployed on Render.</p>
     <p>The application is running.</p>
     <p>Version ${version}</p>
-  `);
+            <p>Preview deployment</p> 
+ `);
 });
 
 app.get('/api/health', (_request, response) => {
