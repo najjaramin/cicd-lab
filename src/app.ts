@@ -21,3 +21,8 @@ app.get('/api/health', (_request, response) => {
 });
 
 export default app;
+app.get('/api/version', (_request, response) => {
+  response.json({
+    version: process.env.APP_VERSION ?? 'development',
+  });
+});
